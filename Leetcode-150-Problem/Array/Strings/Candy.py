@@ -1,5 +1,5 @@
 class Solution:
-    def candy(self, ratings: List[int]) -> int:
+    def candy(self, ratings: list[int]) -> int:
         arr = [1]* len(ratings)
         for i in range(1,len(ratings)):
             if ratings[i-1] < ratings[i]:
